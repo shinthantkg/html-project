@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Variables */
+:root {
+    /* Primary Colors */
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+
+    /* Neutral Colors */
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+
+    /* Typography */
+    --font: "Inter", sans-serif;
+    --fw-light: 400;
+    --fw-med: 700;
+    --fw-bold: 800;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--font);
+    margin: 0;
+    padding: 5% 10%;
+}
+
+/* Flexbox Classes */
+.flex {
+    display: flex;
+}
+
+.flex-jc-c {
+    justify-content: center;
+}
+
+.flex-jc-sb {
+    justify-content: space-between;
+}
+
+.flex-d-c {
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+nav {
+    margin-bottom: 2.5rem;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-item:not(:last-of-type) {
+    margin-right: 2.5rem;
+}
+
+.nav-link {
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+    transition: color 0.2s, cursor 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--soft-red);
+    cursor: pointer;
+}
+
+/* Main */
+.banner {
+    width: 95%;
+    height: 100%;
+}
+
+#web3 {
+    margin-top: 2.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-right: 1rem;
+    width: 16.875rem;
+}
+
+h2 {
+    color: var(--soft-orange);
+    font-size: 1.875rem;
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: var(--fw-bold);
+}
+
+h3 {
+    transition: color 0.2s, cursor 0.2s;
+}
+
+h3:hover {
+    cursor: pointer;
+}
+
+p {
+    color: var(--dark-grayish-blue);
+    line-height: 1.5;
+    margin-top: 0;
+    width: 22.5rem;
+}
+
+.button {
+    background-color: var(--soft-red);
+    color: var(--off-white);
+    letter-spacing: 0.3125rem;
+    margin-top: 1.875rem;
+    padding: 0.9375rem 1.875rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.2s, cursor 0.2s;
+    width: 12.5rem;
+}
+
+.button:hover {
+    background-color: var(--very-dark-blue);
+    cursor: pointer;
+}
+
+/* New */
+#new {
+    background-color: var(--very-dark-blue);
+    padding: 2.1875rem 1.5625rem;
+}
+
+#new h3 {
+    color: var(--off-white);
+    margin-bottom: 0.625rem;
+}
+
+#new h3:hover {
+    color: var(--soft-orange);
+}
+
+hr {
+    border-color: var(--dark-grayish-blue);
+    margin: 1.875rem auto;
+}
+
+/* Trending */
+#trending {
+    margin-top: 4.6875rem;
+}
+
+#trending .flex {
+    margin-right: 1.25rem;
+}
+
+.trending-image {
+    width: 6.25rem;
+    height: 8.125rem;
+    margin-right: 1.25rem;
+}
+
+.trending-title {
+    margin-top: 0;
+}
+
+.trending-title:hover {
+    color: var(--soft-red);
+}
+
+.trending-title span {
+    color: var(--grayish-blue);
+    display: block;
+    font-size: 1.875rem;
+    margin-bottom: 0.625rem;
+}
+
+.trending-text {
+    width: 14.375rem;
+}
+
+@media only screen and (max-width: 47.9375rem) {
+    .banner {
+        width: 95%;
+    }
+}
